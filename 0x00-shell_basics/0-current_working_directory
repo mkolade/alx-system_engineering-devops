@@ -1,0 +1,4 @@
+#!/bin/bash
+#script to get current directory
+current_directory=$(pwd)
+echo "$current_directory"
