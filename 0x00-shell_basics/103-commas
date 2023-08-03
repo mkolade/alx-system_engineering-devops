@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -m -d .[!.]* ..[!.]* [0-9a-zA-Z]* | sed 's/, /, /g; s/ /\/ /g; s/,$/\n/'
+ls -1Ap | grep -v '^\.+$' | LC_COLLATE=C sort -d | tr '\n' ',' | sed 's/,$/\//'
