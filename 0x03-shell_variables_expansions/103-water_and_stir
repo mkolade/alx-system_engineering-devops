@@ -1,0 +1,2 @@
+#!/bin/bash
+printf "%s\n" $(dc -e "16i $WATER 16i $STIR + p")
