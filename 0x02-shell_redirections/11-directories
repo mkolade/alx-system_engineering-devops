@@ -1,2 +1,0 @@
-#!/bin/bash
-echo "$(find . -mindepth 1 -type d -printf '.' | wc -c)"
